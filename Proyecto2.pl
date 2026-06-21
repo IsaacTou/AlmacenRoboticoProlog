@@ -136,8 +136,15 @@ moveRobot(state(Robot,Objetivo,Obstaculos), Move, state(NewRobot, Objetivo, NewO
 
 %Parte 4
 
-agregarNodos(state(Robot,Objetivo,Obstaculos,[Camino]), [state(Robot,Objetivo,Obstaculos,[Camino]])
-
+expandir(nodo(Estado, Camino), HijosValidos) :-
+    findall(
+        nodo(NuevoEstado, NuevoCamino),
+        (
+            moveRobot(Estado, Move, NuevoEstado),
+            append(Camino, [Move], NuevoCamino)   
+        ),
+        HijosValidos
+    ).
 
 esEstadoFinal(state(Robot,(FilaObjetivo, ColumnaObjetivo),Obstaculos)) :-
     FilaObjetivo == 5,
