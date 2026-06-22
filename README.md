@@ -45,12 +45,12 @@
 
 - `enTablero/1`: Verifica que una coordenada esté dentro de los límites del tablero.
 - `verificacionLista/3`: Comprueba que no haya solapamientos entre el robot, la caja objetivo y los bloqueos.
-- `cargarObstaculos`: Predicado para agregar a la base de conocimientos la lista de cajas de bloqueo si la misma es válida.
-- `posicionNueva`: Calcula la nueva posición del robot o la caja tras un movimiento dado.
-- `modificarObstaculos`: Actualiza la lista de bloqueos si la caja objetivo es empujada a una nueva posición.
-- `expandir`: Genera los nuevos estados a partir del estado actual para cada movimiento posible, verificando su validez.
-- `esEstadoFinal`: Verifica si la caja objetivo ha llegado a la posición `(5,5)`.
-- `bfs`: Implementación del algoritmo de búsqueda en anchura, utilizando una cola para gestionar los estados a explorar y una lista de visitados para evitar ciclos.
+- `cargarObstaculos/1`: Predicado para agregar a la base de conocimientos la lista de cajas de bloqueo si la misma es válida.
+- `posicionNueva/3`: Calcula la nueva posición del robot o la caja tras un movimiento dado.
+- `modificarObstaculos/4`: Actualiza la lista de bloqueos si la caja objetivo es empujada a una nueva posición.
+- `expandir/3`: Genera los nuevos estados a partir del estado actual para cada movimiento posible, verificando su validez.
+- `esEstadoFinal/1`: Verifica si la caja objetivo ha llegado a la posición `(5,5)`.
+- `bfs/3`: Implementación del algoritmo de búsqueda en anchura, utilizando una cola para gestionar los estados a explorar y una lista de visitados para evitar ciclos.
 
 **Predicados Incorporados (built-in predicates):**
 
