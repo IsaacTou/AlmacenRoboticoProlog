@@ -1,17 +1,3 @@
-% Universidad Central de Venezuela
-% Facultad de Ciencias 
-% Escuela de Computación 
-% Asignatura: Lenguajes de Programación
-% Semestre I-2026
-
-% Docentes:
-% Eugenio Scalise
-% José Yvimas
-
-% Integrantes:
-% Isaac Pérez C.I. 31.065.844
-% Carmen Medina C.I. 32.061.534
-
 % ======================================================================================================
 % Parte 1: Inicialización del Tablero 
 % ======================================================================================================
