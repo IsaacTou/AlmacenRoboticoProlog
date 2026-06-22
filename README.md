@@ -26,8 +26,6 @@
 
 ## 2. Hechos y Predicados Definidos
 
-## _(Lista y describe brevemente los predicados principales y auxiliares de tu archivo `Proyecto2.pl`)_
-
 **Predicados Dinámicos:**
 
 - `robot(Row, Col)`: Guarda la posición actual inicial del robot.
