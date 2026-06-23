@@ -52,11 +52,11 @@
 
 **Predicados Incorporados (built-in predicates):**
 
-- `assertz/1`: Para agregar hechos dinámicos a la base de conocimientos.
-- `retractall/1`: Para limpiar la base de conocimientos antes de establecer un nuevo estado inicial.
-- `member/2`: Para verificar la presencia de un elemento en una lista, utilizado en la verificación de bloqueos y estados visitados.
+- `assertz/1`: Para agregar hechos dinámicos a la base de conocimientos. Utilizado en `initialBoard/3` para establecer el estado inicial del tablero.
+- `retractall/1`: Para limpiar la base de conocimientos antes de establecer un nuevo estado inicial. Utilizado en `initialBoard/3` para eliminar hechos previos de robot, caja objetivo y bloqueos.
+- `member/2`: Para verificar la presencia de un elemento en una lista, utilizado en la verificación de bloqueos y estados visitados. Se utilizo en los predicados `verificacionLista/3`, `isValidMove/2`, `MoveRobot/3`y `expandir/3`.
 - `append/3`: Para concatenar listas, utilizado en la generación de nuevas secuencias de movimientos.
-- `select/3`: Para seleccionar un elemento de una lista, utilizado para quitar una caja obstaculo con posicion obsoleta para ser modificada por la nueva posicion de la misma caja despues de ser empujada.
+- `select/3`: Selecciona un elemento de una lista, lo elimina y devuelve la lista resultante sin el elemento seleccionado, utilizado para quitar una caja obstaculo con posicion obsoleta para ser modificada por la nueva posicion de la misma caja despues de ser empujada.
 - `findall/3`: Para generar una lista de todos los estados hijos a partir del estado actual, utilizado en la expansión de nodos en el algoritmo BFS. Ya que este predicado funciona como un generador de soluciones, recibe un patrón de búsqueda, una consulta que genera soluciones y una variable para almacenar la lista de soluciones generadas. Esto permite que el algoritmo BFS explore eficientemente todos los estados alcanzables desde el estado inicial sin necesidad de escribir manualmente la lógica para cada movimiento posible.
 
 ## 3. Estrategia Utilizada

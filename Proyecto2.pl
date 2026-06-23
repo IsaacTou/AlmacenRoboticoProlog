@@ -31,10 +31,6 @@ cargarObstaculos([(FilaObstaculo, ColumnaObstaculo) | T]) :-
 
 % Para garantizar el correcto estado inicial de las entidades.
 initialBoard((FilaRobot, ColumnaRobot), (FilaObjetivo, ColumnaObjetivo), BlockingBoxes) :- 
-    % para garantizar la limpieza de ejecuciones previas
-    %retractall(robot(_, _)),
-    %retractall(caja_objetivo(_, _)),
-    %retractall(caja_bloqueo(_, _)),
 
     enTablero((FilaRobot, ColumnaRobot)),
     enTablero((FilaObjetivo, ColumnaObjetivo)),
